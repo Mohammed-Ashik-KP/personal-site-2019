@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (  
         <React.Fragment>
           <div className="row nav-row ">
                        <div className="col d-flex justify-content-center align-items-center">
+
                            <div className="nav-items">
-                               Home
+                               <Link style={{'textDecoration':'none','color':'inherit'}} to="/">Home</Link>
                            </div>
                            <div className="nav-items">
-                               About
+                           <Link style={{'textDecoration':'none','color':'inherit'}} to="/about">About</Link>
                            </div>
                            <div className="nav-items">
-                               Portfolio
+                           <Link style={{'textDecoration':'none','color':'inherit'}} to="/portfolio">Portfolio</Link>
                            </div>
                            <div className="nav-items">
-                                Contact
+                           <Link style={{'textDecoration':'none','color':'inherit'}} to="/contact">Contact</Link>
                            </div>
                        </div>
                    </div>

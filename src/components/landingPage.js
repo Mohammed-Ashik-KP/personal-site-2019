@@ -2,13 +2,13 @@ import React from 'react';
 import workingui from '../assets/images/workingui.png';
 import Fade from 'react-reveal/Fade';
 import {FaLinkedin,FaGithub,FaInstagram,FaAngleDoubleDown} from 'react-icons/fa';
-import Header from './header';
+import Base from './base';
+import { Link } from 'react-router-dom';
 const LandingPage = () => {
     return (  
         <React.Fragment>
-           <div className="main-section">
-               <div className="sub-section">
-                   <Header/>
+          
+          <Base baseClass="sub-section-with-2-corner">
                    <div className="row ">
                        <div className="col-6 intro-text">
                                 <h3>Hello World !</h3> 
@@ -39,7 +39,9 @@ const LandingPage = () => {
                     </div>
                     <div className="row down-arrow-row">
                         <div className="col down-arrow">
+                        <Link style={{'textDecoration':'none','color':'inherit'}} to="/about">
                             <FaAngleDoubleDown></FaAngleDoubleDown>
+                        </Link>
                         </div>
                     </div>
                      
@@ -47,8 +49,7 @@ const LandingPage = () => {
                    <div className="bg-img">
                      <Fade right duration={2000}>  <img src={workingui} alt="img"></img></Fade>
                    </div>
-               </div>
-           </div>
+           </Base>
         </React.Fragment>
     );
 }
