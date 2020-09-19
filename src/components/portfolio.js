@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Card from './card';
 import smui from '../assets/images/smui.jpg';
 
+
 const Portfolio = () => {
     const settings = {
         dots: false,

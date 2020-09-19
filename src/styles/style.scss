@@ -714,32 +714,163 @@ $holyblue:#2980b9;
 }
 
 .contact-box{
-    width: 380px;
-    margin: auto;
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include max-824(){
+    width: 700px;
+}
+@include max-699(){
+    width: 650px;
+    justify-content: start;
+}
+@include max-580(){
+    width: 550px;
+}
+@include max-480(){
+    margin-top: 100px;
+}
+  .left{
+      max-width: 250px;
+      background-color: $darkblue;
+      display: flex;
+      justify-content: center;
+      padding: 30px 60px;
+      z-index: 10;
+      box-shadow: 5px 5px 8px #222;
+      @include max-699(){
+         width: 220px;
+         
+    }
+    
+    @include max-620(){
+        position: absolute;
+        min-width: 100%;
+        margin: auto;
+        top: 90%;
+        height: 200px;
+        
+    }
+    @include max-580(){
+        height: 170px;
+        min-width: 99%;
+    }
+ 
+      .data{
+         
+          
+          .text{
+              margin: 30px 0px;
+              color: white;
+              font-weight: bolder;
 
-    .in{
-        margin: 18px 0px;
+              @include max-620(){
+                  margin: 10px 0px;
+              }
+          }
+      }
+  }
+  .right{
+    width: 550px;
+    position: relative;
+    height:320px;
+    left: -50px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px #222;
+    @include max-699(){
+         width:350px;
+         left: -10px;
+    }@include max-620(){
+        min-width: 80%;
+        margin-left: 40px;
+        z-index: 22;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    @include max-580(){
+        margin-left: 30px;
+    }
+    @media (max-width:522px){
+        margin-left: 0px;
+        min-width: 100%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        left: 0px;
+    }
+    @include max-480(){
+        
+        margin-left: -30px;
+    }
 
+    .form{
+      position: relative;
+      width:300px;
+      margin: auto;
+      @include max-699(){
+         width: 250px;
+    }
+    @include max-580(){
+        width: 400px;
+    }
+      
+      
+        ._input{
+            position: relative;
+            margin: 30px 10px;
+            
+            input{
+                border: none;
+                border-bottom: 3px solid $holyblue;
+                background-color: transparent;
+                outline: none;
+               padding: 8px 2px;
 
-        input{
-            padding: 3px 5px;
-            outline: none;
-            border: 1px solid black;
-            border-radius: 20px;
-            text-indent: 5px;
-            font-weight: bold;
-            color: $midnight;
+               
+                &:focus~span{
+                   top: -14px;
+                   font-size: 14px;
+                   font-weight: bold;
+                   color: $midnight;
+                   transition: font-size .3s ease-in-out;
+                }
+            }
+            span{
+                color: $darkblue;
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                top: 10px;
+               
+
+            }
+            .havedata{
+                top: -14px;
+                   font-size: 14px;
+                   font-weight: bold;
+                   color: $midnight;
+                   transition: font-size .3s ease-in-out;
+            }
         }
+    }
+  }
+}
+.send-btn{
+    width: 90px;
+    text-align: center;
+    padding: 3px;
+    font-weight: 600;
+    border-radius: 5px;
+}
 
-        textarea{
-            padding: 3px 5px;
-            outline: none;
-            border: 1px solid black;
-            border-radius: 20px;
-            text-indent: 5px;
-            font-weight: bold;
+.footer{
+   background-image: linear-gradient(to left,rgb(248, 248, 248),rgb(241, 241, 241));
+    .row{
+        .col{
+            height: 80px;
             color: $midnight;
-            resize: none;
+            font-weight: bolder;
         }
     }
 }

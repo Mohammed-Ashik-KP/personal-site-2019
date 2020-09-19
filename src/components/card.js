@@ -1,5 +1,5 @@
 import React from 'react';
-import smui from '../assets/images/smui.jpg';
+
 const Card = ({title,image,desc,tech}) => {
     return ( 
         <React.Fragment>
