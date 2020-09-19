@@ -8,13 +8,14 @@ const About = () => {
     return ( 
         <React.Fragment>
             <Base baseClass="sub-section">
+               
                 <div className="row mt-4">
-                    <div className="col-xl-2 col-lg-2 col-md-2 about">
+                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-2 about">
                         <div className="profile-pic">
                            <img src={ashiq} alt="profile"></img>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-3 col-md-3 basic">
+                    <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 basic">
                     <Slide left> <div className="name">
                             Mohammed Ashik KP
                         </div> </Slide>
@@ -25,9 +26,9 @@ const About = () => {
                            Ottapalam , Kerala
                         </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 right-col">
                         <div className="row">
-                            <div className="col">
+                            <div className="col brief-col">
                                 <div className="title2">
                                     Breif
                                 </div>

@@ -9,6 +9,7 @@ const LandingPage = () => {
         <React.Fragment>
           
           <Base baseClass="sub-section-with-2-corner">
+            <div className="only-for-mobile bg-circle "></div>
                    <div className="row ">
                        <div className="col-6 intro-text">
                                 <h3>Hello World !</h3> 
