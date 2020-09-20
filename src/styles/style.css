@@ -1048,17 +1048,84 @@
 @media (max-width: 620px) {
   .contact-box .left {
     position: absolute;
-    min-width: 100%;
-    margin: auto;
-    top: 90%;
+    min-width: 40%;
     height: 200px;
+    top: 20%;
+    z-index: 99;
+    left: 60%;
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 560px) {
   .contact-box .left {
-    height: 170px;
-    min-width: 99%;
+    min-width: 30%;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box .left {
+    top: 100%;
+    min-width: 100%;
+    left: 10%;
+    margin: auto;
+    height: auto;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: block;
+  }
+}
+
+.contact-box .left .left-title {
+  display: none;
+  font-weight: bolder;
+  color: #2c3e50;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin-left: -50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .contact-box .left .left-title {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-box .left .left-title {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .contact-box .left .left-title {
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-box .left .data {
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box .left .data {
+    color: white;
+    min-width: 100%;
+    margin: 0;
   }
 }
 
@@ -1071,6 +1138,25 @@
 @media (max-width: 620px) {
   .contact-box .left .data .text {
     margin: 10px 0px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box .left .data .text {
+    color: #30336b;
+    font-weight: bolder;
+    text-align: left;
+  }
+}
+
+.contact-box .left .data .sm-icon {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .contact-box .left .data .sm-icon {
+    color: #2c3e50;
   }
 }
 
@@ -1094,16 +1180,21 @@
 @media (max-width: 620px) {
   .contact-box .right {
     min-width: 80%;
-    margin-left: 40px;
+    margin-left: 00px;
     z-index: 22;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
   }
 }
 
 @media (max-width: 580px) {
   .contact-box .right {
-    margin-left: 30px;
+    width: 580px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-box .right {
+    width: 550px;
   }
 }
 
@@ -1111,15 +1202,27 @@
   .contact-box .right {
     margin-left: 0px;
     min-width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     left: 0px;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-box .right {
-    margin-left: -30px;
+  .contact-box .right .title {
+    text-align: center;
+    width: 100%;
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 420px) {
+  .contact-box .right .title {
+    margin-left: -80px;
+  }
+}
+
+@media (max-width: 480px) and (max-width: 390px) {
+  .contact-box .right .title {
+    margin-left: -100px;
   }
 }
 
@@ -1132,6 +1235,13 @@
 @media (max-width: 699px) {
   .contact-box .right .form {
     width: 250px;
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-box .right .form {
+    width: auto;
+    margin-left: 20px;
   }
 }
 

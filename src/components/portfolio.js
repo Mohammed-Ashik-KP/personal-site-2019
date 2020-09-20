@@ -9,7 +9,7 @@ import smui from '../assets/images/smui.jpg';
 
 const Portfolio = () => {
     const settings = {
-        dots: false,
+        dots: true,
         arrows:true,
         infinite: true,
         slidesToShow: 1,

@@ -747,19 +747,63 @@ $holyblue:#2980b9;
     
     @include max-620(){
         position: absolute;
-        min-width: 100%;
-        margin: auto;
-        top: 90%;
+        min-width: 40%;
         height: 200px;
+        top:20%;
+        z-index: 99;
+        left: 60%;
+    }
+    @media (max-width:560px){
+        min-width: 30%;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+         align-items: center;
+        
+    }@include max-480(){
+        top: 100%;
+        min-width: 100%;
+        left: 10%;
+        margin: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        display: block;
+    }
+    .left-title{
+        @include only-for-mobile;
+        font-weight: bolder;
+        color: $midnight;
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+        margin-left: -50px;
+        margin-bottom: 20px;
+
+        @media (max-width:420px){
+            margin-left: -30px;
+        }
+        @media (max-width:390px){
+            margin-left: -40px;
+        }
         
     }
-    @include max-580(){
-        height: 170px;
-        min-width: 99%;
-    }
- 
+
       .data{
-         
+   
+        @media (max-width:560px){
+            margin-left: -15px;
+            
+        }
+        @include max-480(){
+
+            color: white;
+            min-width: 100%;
+            margin: 0;
+        }
+        @media (max-width:380px){
+    
+        }
           
           .text{
               margin: 30px 0px;
@@ -768,8 +812,21 @@ $holyblue:#2980b9;
 
               @include max-620(){
                   margin: 10px 0px;
+                  font-weight: 500;
               }
+              @include max-480(){
+                color: $darkblue;
+                 font-weight: bolder;
+                 text-align: left;
+              }
+             
           }
+          .sm-icon{
+            color: white;
+            @include max-480(){
+                color: $midnight;
+            }
+        }
       }
   }
   .right{
@@ -784,26 +841,38 @@ $holyblue:#2980b9;
          left: -10px;
     }@include max-620(){
         min-width: 80%;
-        margin-left: 40px;
+        margin-left: 00px;
         z-index: 22;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
+      
     }
     @include max-580(){
-        margin-left: 30px;
+        width: 580px;
+        margin-left: auto;
     }
+    @media (max-width:560px){
+        width: 550px;
+    }
+
     @media (max-width:522px){
         margin-left: 0px;
         min-width: 100%;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
         left: 0px;
     }
     @include max-480(){
-        
-        margin-left: -30px;
-    }
+        .title{
+            text-align: center;
+            width: 100%;
+            margin-left: -50px;
 
+            @media (max-width:420px){
+                margin-left: -80px;
+            }
+            @media (max-width:390px){
+                margin-left: -100px;
+            }
+        }
+    }
+    
     .form{
       position: relative;
       width:300px;
@@ -811,9 +880,14 @@ $holyblue:#2980b9;
       @include max-699(){
          width: 250px;
     }
+    @include max-620(){
+        width: auto;
+        margin-left: 20px;
+    }
     @include max-580(){
         width: 400px;
     }
+
       
       
         ._input{
