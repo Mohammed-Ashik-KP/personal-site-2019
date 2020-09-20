@@ -447,6 +447,10 @@ $holyblue:#2980b9;
                 }
             }
         }
+        .link-row{
+            position: relative;
+            z-index: 1;
+        }
         .sm-row{
             position: relative;
             height: 240px;

@@ -643,6 +643,11 @@
   }
 }
 
+.main-section .link-row {
+  position: relative;
+  z-index: 1;
+}
+
 .main-section .sm-row {
   position: relative;
   height: 240px;

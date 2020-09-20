@@ -24,7 +24,7 @@ const LandingPage = () => {
                         </h2>
                         </div>
                     </div>
-                    <div className="row  h-25">
+                    <div className="row link-row h-25">
                         <div className="sm-row col-6 d-flex justify-content-center align-items-start">
                         <a href="https://linkedin.com/in/AashiqOtp/"> <div className="m-4 sm-icon">
                                <FaLinkedin></FaLinkedin>
