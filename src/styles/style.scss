@@ -125,7 +125,6 @@ $holyblue:#2980b9;
     margin-left: 20px;
     margin-top: 30px;
     cursor: pointer;
-    z-index: 122;
     transition: all .5s ease-in-out;
    
     &::before{
@@ -153,7 +152,7 @@ $holyblue:#2980b9;
  
     margin-left: 170px;
     margin-top: 30px;
-    z-index: 122;
+ 
     cursor: pointer;
     transition: all .5s ease-in-out;
    
@@ -193,7 +192,7 @@ $holyblue:#2980b9;
         height: 100vh;
         width: 220px;
         left:0px;
-        z-index: 11;
+        z-index: 1;
         background-color:$holyblue;
       
 
@@ -451,9 +450,14 @@ $holyblue:#2980b9;
         .sm-row{
             position: relative;
             height: 240px;
+            z-index: 123;
             @include max-480(){
                 min-width: 100%;
-                top: 90%;
+                top:60%;
+            }
+            a{
+                cursor: pointer;
+                color: #222;
             }
             &::before{
                 position: absolute;
@@ -487,6 +491,7 @@ $holyblue:#2980b9;
             }
             .sm-icon{
                 font-size: 24px;
+                cursor: pointer;
 
                 @include max-620(){
                   
@@ -494,6 +499,10 @@ $holyblue:#2980b9;
                 }
                 @include max-480(){
                     font-size: 24px;
+                }
+                a{
+                    color: $darkblue;
+                  
                 }
             }
         }

@@ -149,7 +149,6 @@
   margin-left: 20px;
   margin-top: 30px;
   cursor: pointer;
-  z-index: 122;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -179,7 +178,6 @@
 .close-nav-bar {
   margin-left: 170px;
   margin-top: 30px;
-  z-index: 122;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -231,7 +229,7 @@
   height: 100vh;
   width: 220px;
   left: 0px;
-  z-index: 11;
+  z-index: 1;
   background-color: #2980b9;
 }
 
@@ -648,13 +646,19 @@
 .main-section .sm-row {
   position: relative;
   height: 240px;
+  z-index: 123;
 }
 
 @media (max-width: 480px) {
   .main-section .sm-row {
     min-width: 100%;
-    top: 90%;
+    top: 60%;
   }
+}
+
+.main-section .sm-row a {
+  cursor: pointer;
+  color: #222;
 }
 
 .main-section .sm-row::before {
@@ -703,6 +707,7 @@
 
 .main-section .sm-row .sm-icon {
   font-size: 24px;
+  cursor: pointer;
 }
 
 @media (max-width: 620px) {
@@ -715,6 +720,10 @@
   .main-section .sm-row .sm-icon {
     font-size: 24px;
   }
+}
+
+.main-section .sm-row .sm-icon a {
+  color: #30336b;
 }
 
 .main-section .down-arrow-row .down-arrow {

@@ -26,11 +26,11 @@ const LandingPage = () => {
                     </div>
                     <div className="row  h-25">
                         <div className="sm-row col-6 d-flex justify-content-center align-items-start">
-                                <div className="m-4 sm-icon">
-                                    <FaLinkedin></FaLinkedin>
-                                    </div>
+                        <a href="https://linkedin.com/in/AashiqOtp/"> <div className="m-4 sm-icon">
+                               <FaLinkedin></FaLinkedin>
+                                    </div> </a>
                                     <div className="m-4 sm-icon">
-                                    <FaGithub></FaGithub>
+                                   <a href="https://github.com/Aashiq-Otp/" > <FaGithub></FaGithub></a>
                                     </div> 
                                     <div className="m-4 sm-icon">
                                     <FaInstagram></FaInstagram>
