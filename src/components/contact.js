@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Base from './base';
 import {FaLinkedin,FaGithub,FaInstagram} from 'react-icons/fa';
 import Fade from 'react-reveal/Fade'
-import { Redirect } from 'react-router-dom';
 
 const Contact = () => {
  

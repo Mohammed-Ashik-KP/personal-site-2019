@@ -25,6 +25,9 @@ $holyblue:#2980b9;
 @mixin max-480 {
     @media (max-width:480px){@content;}
 }
+@mixin max-400 {
+    @media (max-width:400px){@content;}
+}
 
 
 
@@ -37,6 +40,34 @@ $holyblue:#2980b9;
 }
 .bg-none{
     background-color: transparent !important;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(-33deg);
+        top: 20vh;
+    }
+    50%{
+        transform: rotate(-66deg);
+        top: 23vh;
+    }
+    99%{
+        transform: rotate(-33deg);
+        top: 20vh;
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: rotate(124deg);
+        top: 50vh;
+    }
+    50%{
+        transform: rotate(130deg);
+        top: 47vh;
+    }
+    99%{
+        transform: rotate(124deg);
+        top: 50vh;
+    }
 }
 .bg-circle {
     position: relative;
@@ -54,6 +85,10 @@ $holyblue:#2980b9;
         border-top-right-radius: 20%;
         border-bottom-left-radius: 10%;
         transform: rotate(-33deg);
+        @include max-400(){
+                left: -18%;
+                animation: rotate 10s infinite ease-in-out;
+        }
 }   
     &::after{
         @include only-for-mobile;
@@ -68,6 +103,11 @@ $holyblue:#2980b9;
        border-bottom-right-radius: 30%;
        border-bottom-left-radius: 45%;
        transform: rotate(124deg);
+
+       @include max-400(){
+           right: -17%;
+           animation: rotate2 10s   infinite  ease-in-out;
+       }
     }
 
 }
@@ -329,6 +369,9 @@ $holyblue:#2980b9;
                min-width: 100%;
                margin-top: 120px;
            }
+           @include max-400(){
+               margin-top: 140px;
+           }
           
 
             h3{
@@ -343,6 +386,10 @@ $holyblue:#2980b9;
                 }
                 @include max-480(){
                     font-size: 24px;
+                }
+                @include max-400(){
+                
+                    margin-top: 20px;
                 }
     
             }
@@ -374,6 +421,10 @@ $holyblue:#2980b9;
                     @include max-480(){
                         font-size: 24px;
                     }
+                    @include max-400(){
+                        font-size: 26px;
+                        margin-top:50px;
+                    }
 
                     p{
                         margin-top: 20px;
@@ -389,6 +440,9 @@ $holyblue:#2980b9;
                         @include max-480(){
                             font-size: 14px;
                         }
+                        @include max-400(){
+                            margin-top: 60px;
+                        }
                     }
                 }
             }
@@ -398,7 +452,7 @@ $holyblue:#2980b9;
             height: 240px;
             @include max-480(){
                 min-width: 100%;
-                top: 80%;
+                top: 90%;
             }
             &::before{
                 position: absolute;
@@ -436,6 +490,9 @@ $holyblue:#2980b9;
                 @include max-620(){
                   
                     font-size: 20px;
+                }
+                @include max-480(){
+                    font-size: 24px;
                 }
             }
         }
