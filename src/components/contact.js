@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Base from './base';
-import {FaLinkedin,FaGithub,FaInstagram} from 'react-icons/fa';
+import {FaLinkedin,FaGithub,FaInstagram,FaPhoneAlt,FaTwitter,FaEnvelopeOpen} from 'react-icons/fa';
 import Fade from 'react-reveal/Fade'
 
 const Contact = () => {
@@ -45,7 +45,7 @@ const Contact = () => {
      const sendMail=(e)=>{
       
         return (
-        fetch(`https://api.telegram.org/bot1297815796:AAEc8koMXdnSLpm4ujdEuN5yamKJIfUwYoc/sendMessage?chat_id=@aashiqwebsite&text=${name}    ${email}    ${message}`
+        fetch(`https://api.telegram.org/bot1297815796:AAEc8koMXdnSLpm4ujdEuN5yamKJIfUwYoc/sendMessage?chat_id=@aashiqwebsite&text=${name} %0A ${email}  %0A  ${message}`
 )
         )
         //1297815796:AAEc8koMXdnSLpm4ujdEuN5yamKJIfUwYoc
@@ -114,6 +114,46 @@ const Contact = () => {
                         </form>
                     </div>
                </div>
+            </div>
+
+            <div className="sm-contact-box">
+                <div className="row text-center">
+                    <div className="col mt-3 text-dark font-weight-bolder font-large">
+                        Get In Touch
+                    </div>
+                </div>
+                <div className="row mt-3 text-center ">
+                    <div className="col-12 my-2 font-weight-bold contact-icon">
+                            <FaPhoneAlt></FaPhoneAlt> &nbsp; +91 8137911604
+                    </div>
+                    <div className="col-12 my-2 font-weight-bold contact-icon">
+                            <FaEnvelopeOpen></FaEnvelopeOpen> &nbsp; AashiqOtp.as@gmail.com
+                    </div>
+                    <div className="col-12 my-2 font-weight-bold contact-icon">
+                           <FaTwitter></FaTwitter> &nbsp; @ThisIsAashiq
+                    </div>
+                </div>
+               <div className="d-flex justify-content-center z-most"> <form>
+                        <div className="form text-center">
+                            <div className="_input">
+                                <input type="text" onChange={(e)=>handleName(e.target.value)}></input>
+                                    <span className={nspanClass}>Name</span>
+                             
+                            </div>
+                            <div className="_input">
+                                <input type="text" onChange={(e)=>handleEmail(e.target.value)}></input>
+                                    <span className={espanClass}>Email</span>
+                               
+                            </div>
+                            <div className="_input">
+                                <input type="text" onChange={(e)=>handleMessage(e.target.value)}></input>
+                                    <span className={mspanClass}>Message</span>
+                                
+                            </div>
+                            <div className="sm-send-btn button btn-primary" onClick={(e)=>sendMail(e)}>Send</div>
+                        </div>
+                        </form>
+                        </div>
             </div>
         </Base>
 
